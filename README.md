@@ -10,7 +10,17 @@ For some tips in formatting text in readme file, refer to https://docs.github.co
 
 -----
 
+view all rooms
+view available rooms
+
+add guest
+
+add staff
+
+
 
 
 # References
 Provide the references that you have used to support your assignment. 
+
+find() method - https://www.w3schools.com/JSREF/jsref_find.asp
