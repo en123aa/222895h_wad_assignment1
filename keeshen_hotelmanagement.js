@@ -5,10 +5,17 @@ let hotelManagement = {
     staff: [],
     bookings: [],
 
-    // this function is used to add a new room into the hotel's inventory with 3 fields : room number, type of room and price per night, and a console log will be created if the addition was succesful
+    // this function is used to add a new room into the hotel's inventory with 4 fields : room number, type of room, price per night and vacancy, with a console log being created if the addition was succesful
     addRoom(roomNumber, type, pricePerNight) {
         this.rooms.push({roomNumber, type, pricePerNight, vacant: true});
         console.log(`Room ${roomNumber} added.`);
+    },
+
+    // this function will list down all the current available rooms in the hotel based on the 'vacant' parameter
+    availableRooms() {
+        let availableRooms = this.rooms.filter(room => room.vacant);
+        console.log("Available Rooms:", availableRooms);
+        return availableRooms;
     },
 
     // this function is used to add a staff members' details to the staff array/database, and a console log will be created if the addition was successful
