@@ -5,7 +5,7 @@ let hotelManagement = {
     guests: [],
     staff: [],
 
-    // this function is used to add a new room into the hotel's inventory with 3 fields : room number, type of room and price per night
+    // this function is used to add a new room into the hotel's inventory with 3 fields : room number, type of room and price per night, and a console log will be created if the addition was succesful
     addRoom(roomNumber, type, pricePerNight) {
         this.rooms.push({roomNumber, type, pricePerNight});
         console.log(`Room ${roomNumber} added.`);
