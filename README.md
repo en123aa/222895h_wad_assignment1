@@ -62,6 +62,16 @@ hotelManagement.addStaff('Alice', 'alice@gmail.com', '123456789');
 ```
 This function requires 3 parameters : string name, string email and string phoneNumber. This function will add a staff member's details to the **staff** array
 
+**- getStaffDetailsByName()**
+```
+hotelManagement.getStaffDetailsByName(name);
+```
+Example :
+```
+hotelManagement.getStaffDetailsByName('Alice');
+```
+This function requires the parameter string name. Based on this parameter the function will use the find() method to look for the specified name and return the staff member's details, or it will return an error message if there are no staff members registered under the specified name
+
 # References
 Provide the references that you have used to support your assignment. 
 
