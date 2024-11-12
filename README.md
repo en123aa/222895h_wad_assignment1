@@ -10,7 +10,8 @@ For some tips in formatting text in readme file, refer to https://docs.github.co
 
 -----
 
-
+This is a node module that intends to help with hotel management.
+<br>
 
 -----
 
@@ -28,3 +29,5 @@ add staff
 Provide the references that you have used to support your assignment. 
 
 find() method - https://www.w3schools.com/JSREF/jsref_find.asp
+<br>
+filter() method - https://www.w3schools.com/jsref/jsref_filter.asp
