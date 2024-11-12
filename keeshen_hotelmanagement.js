@@ -18,20 +18,20 @@ let hotelManagement = {
         return availableRooms;
     },
 
-    // this function is used to book a room from the list of rooms available for a guest to stay in
-    bookRoom(guestName, phoneNumber, roomNumber, start, end) {
+    // this function is used to book a room from the list of rooms available for a guest to stay in. by using find(), it will look for the specified room and check if it is marked as vacant, in which case the the specified room will be booked under the guestName from the checkIn date to the checkOut date
+    bookRoom(guestName, phoneNumber, roomNumber, checkIn, checkOut) {
         const room = this.rooms.find(r => r.roomNumber === roomNumber && r.vacant);
         if (!room) {
             console.log(`Room ${roomNumber} is not available.`)
         }
         else {
-            this.bookings.push({ guestName, phoneNumber, roomNumber, start, end })
+            this.bookings.push({ guestName, phoneNumber, roomNumber, checkIn, checkOut })
             room.vacant = false;
-            console.log(`Room ${roomNumber} has been booked for ${guestName}, from ${start} to ${end}.`);
+            console.log(`Room ${roomNumber} has been booked for ${guestName}, from ${checkIn} to ${checkOut}.`);
         }
     },
 
-    // this function is used to cancel an existing booking that has been made by a guest.
+    // this function is used to cancel an existing booking that has been made by a guest. by using the findIndex() method, this function will check for a booking under the specified guestName and roomNumber and if there is a match found, it will cancel the booking and output a message, else if there is no match then a message will be shown saying that there is no such registered booking
     cancelBooking(guestName, roomNumber) {
         const bookingIndex = this.bookings.findIndex(bookings => bookings.guestName === guestName && bookings.roomNumber === roomNumber);
         if (bookingIndex === -1) {
@@ -42,7 +42,7 @@ let hotelManagement = {
             const room = this.rooms.find(r => r.roomNumber === roomNumber);
             if (room) room.vacant = true;
 
-            console.log(`Booking for ${guestName}, room ${roomNumber} has been canceled.`);
+            console.log(`Booking for ${guestName} in room ${roomNumber} has been canceled.`);
         }
     },
 
@@ -57,10 +57,8 @@ let hotelManagement = {
         let staffMember = this.staff.find(staff => staff.name === name);
         if (staffMember) {
             console.log(`Details for ${name}:`, staffMember);
-            //return staffMember;
         } else {
             console.log(`Staff member ${name} not found.`);
-            //return `Staff member ${name} not found.`;
         }
     },
 }

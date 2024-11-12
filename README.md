@@ -31,3 +31,9 @@ Provide the references that you have used to support your assignment.
 find() method - https://www.w3schools.com/JSREF/jsref_find.asp
 <br>
 filter() method - https://www.w3schools.com/jsref/jsref_filter.asp
+<br>
+shorthand arrow functions - https://www.w3schools.com/js/js_arrow_function.asp
+<br>
+findIndex() method - https://www.w3schools.com/jsref/jsref_findindex.asp
+<br>
+splice() method - https://www.w3schools.com/jsref/jsref_splice.asp
