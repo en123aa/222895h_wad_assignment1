@@ -1,29 +1,18 @@
 # Assignment 1
 
-You will only need one file, ie, your node module, for this assignment.
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to setup your node module, if any. Describe how to call the functions, what parameters required and so on.
-
-You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
-
-For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-
------
-
-This is a node module that intends to help with hotel management.
+**This is a node module that intends to help with hotel management.
 <br>
+To setup this node module, first you will need to create an app.js file and add the require statement at the top of the app file**
+```
+const hotelManagement = require('./keeshen_hotelManagement');
+```
 
------
+**To start using the node module, open the terminal and type node app.js**
 
-view all rooms
-view available rooms
-
-add guest
-
-add staff
-
-
-
+```
+addRoom()
+```
 
 # References
 Provide the references that you have used to support your assignment. 
@@ -32,8 +21,8 @@ find() method - https://www.w3schools.com/JSREF/jsref_find.asp
 <br>
 filter() method - https://www.w3schools.com/jsref/jsref_filter.asp
 <br>
-shorthand arrow functions - https://www.w3schools.com/js/js_arrow_function.asp
-<br>
 findIndex() method - https://www.w3schools.com/jsref/jsref_findindex.asp
 <br>
 splice() method - https://www.w3schools.com/jsref/jsref_splice.asp
+<br>
+shorthand arrow functions - https://www.w3schools.com/js/js_arrow_function.asp
