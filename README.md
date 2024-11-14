@@ -2,9 +2,9 @@
 
 
 **This is a node module that intends to help with hotel management
-<br>
+<br><br>
 To use this node module, you will have to clone this repository. Click on the green "Code" button and click "Open with GitHub desktop"
-<br>
+<br><br>
 To setup this node module, first you will need to create an app.js file and add the require statement at the top of the app file**
 ```
 const hotelManagement = require('./keeshen_hotelManagement');
